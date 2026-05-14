@@ -1,0 +1,145 @@
+.section {
+  padding: 100px 0;
+  background: var(--bg);
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding: 120px 0;
+  }
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  align-items: end;
+  margin-bottom: 56px;
+}
+
+@media (min-width: 768px) {
+  .header {
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-bottom: 64px;
+  }
+}
+
+.header h2 {
+  font-family: var(--heading);
+  font-size: clamp(36px, 4.5vw, 56px);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+  color: var(--ink);
+}
+
+.header p {
+  font-size: 15px;
+  color: var(--text-light);
+  line-height: 1.9;
+  font-weight: 300;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.card {
+  background: var(--bg-warm);
+  padding: 36px 28px;
+  border-radius: 12px;
+  transition: all 0.4s var(--ease);
+  cursor: default;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid transparent;
+}
+
+.card:hover {
+  background: #fff;
+  border-color: var(--border);
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-8px);
+}
+
+.cardIcon {
+  margin-bottom: 20px;
+  width: 52px;
+  height: 52px;
+  background: var(--accent-glow);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s var(--ease);
+}
+
+.card:hover .cardIcon {
+  background: var(--accent);
+}
+
+.card:hover .cardIcon svg {
+  stroke: #fff;
+}
+
+.cardNum {
+  font-family: var(--heading);
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--border);
+  line-height: 1;
+  margin-bottom: 16px;
+  transition: color 0.3s var(--ease);
+}
+
+.card:hover .cardNum {
+  color: var(--accent-glow);
+}
+
+.card h3 {
+  font-family: var(--heading);
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+}
+
+.card p {
+  font-family: var(--body);
+  font-size: 13px;
+  color: var(--text-light);
+  line-height: 1.85;
+  font-weight: 300;
+}
+
+.cardLine {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent), var(--gold));
+  transition: width 0.5s var(--ease);
+  border-radius: 0 3px 0 0;
+}
+
+.card:hover .cardLine {
+  width: 100%;
+}
