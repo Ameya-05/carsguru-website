@@ -22,7 +22,7 @@ export default function CTASection() {
                 next car?
               </h2>
               <p>
-                Our team is ready to help you find the right match — no
+                Our team is ready to help you find the right match no
                 pressure, just guidance.
               </p>
             </div>
