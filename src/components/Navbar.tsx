@@ -39,8 +39,8 @@ export default function Navbar() {
           <Image
             src="/Logo.jpg"
             alt="CarsGuru Logo"
-            width={52}
-            height={52}
+            width={68}
+            height={68}
             className={styles.logoImg}
             priority
           />

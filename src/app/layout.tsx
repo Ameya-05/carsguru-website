@@ -19,6 +19,9 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "CarsGuru — Pune's Most Trusted Pre-Owned Car Dealer | Buy, Sell & Exchange",
+  icons: {
+    icon: "/favicon.svg"
+  },
   description:
     "CarsGuru is Pune's premier multi-brand pre-owned car showroom. Buy verified, quality-checked used cars at honest prices. Easy finance, RTO, insurance. 500+ cars sold. Visit us today!",
   keywords: [
@@ -70,7 +73,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/Logo.jpg" />
         <meta name="theme-color" content="#ffffff" />
         <script
           type="application/ld+json"

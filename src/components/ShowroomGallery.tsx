@@ -9,7 +9,8 @@ const galleryImages = [
   { src: "/showroom-1.jpg", alt: "CarsGuru Showroom Entrance - Trusted Multi-Brand Pre-Owned Cars", label: "Our Showroom" },
   { src: "/showroom-2.jpg", alt: "CarsGuru Car Yard - Wide Selection of Pre-Owned Vehicles", label: "Car Collection" },
   { src: "/showroom-3.jpg", alt: "CarsGuru Premium Lounge - Comfortable Customer Waiting Area", label: "Customer Lounge" },
-  { src: "/showroom-4.jpg", alt: "CarsGuru Display Area - Quality Checked Cars on Display", label: "Display Area" },
+  { src: "/showroom-4.jpg", alt: "CarsGuru Delivery Section - Your Dream Car Delivery Section", label: "Delivery Section" },
+  { src: "/showroom-5.jpeg", alt: "CarsGuru Executive Consultation Cabin - Professional Space for Customer Car Deal Discussions", label: "Executive Consultation Cabin" },
 ];
 
 export default function ShowroomGallery() {
